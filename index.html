@@ -62,7 +62,7 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      font-size: 11px;
+      font-size: 13px;
       letter-spacing: 0.02em;
       white-space: nowrap;
       padding: 9px 0;
@@ -143,7 +143,7 @@
     .nav-links-wrap { display: flex; align-items: center; flex-shrink: 0; }
     .nav-links { display: none; gap: 4px; }
     .nav-links a {
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -185,7 +185,7 @@
     .mobile-nav a {
       display: block;
       padding: 15px 20px;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -234,7 +234,7 @@
       display: inline-block;
       background: var(--red);
       color: #fff;
-      font-size: 9px;
+      font-size: 11px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       font-weight: 700;
@@ -253,7 +253,7 @@
     .slide-list { display: flex; flex-direction: column; gap: 5px; margin-bottom: 16px; }
     .slide-list li {
       color: rgba(255,255,255,0.88);
-      font-size: clamp(11px, 3vw, 15px);
+      font-size: clamp(13px, 3vw, 17px);
       display: flex;
       align-items: center;
       gap: 8px;
@@ -278,7 +278,7 @@
       background: var(--red);
       color: #fff;
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
@@ -374,13 +374,13 @@
     .feature-box:hover .feature-icon, .feature-box:active .feature-icon { background: var(--red); color: #fff; }
     .feature-title {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 14px;
+      font-size: 17px;
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--text);
     }
-    .feature-sub { font-size: 11px; color: var(--muted); line-height: 1.4; }
+    .feature-sub { font-size: 13px; color: var(--muted); line-height: 1.4; }
 
     .about-section {
       background: var(--grey);
@@ -401,7 +401,7 @@
       box-shadow: 0 16px 40px rgba(0,0,0,0.12);
     }
     .about-tag {
-      font-size: 10px;
+      font-size: 12px;
       letter-spacing: 0.26em;
       text-transform: uppercase;
       color: var(--red);
@@ -428,7 +428,7 @@
       margin: 16px 0;
     }
     .about-desc {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 1.8;
       color: var(--text-mid);
       font-weight: 500;
@@ -444,7 +444,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 13px;
+      font-size: 15px;
       color: var(--text);
       font-weight: 600;
     }
@@ -502,7 +502,7 @@
       margin: 0 auto;
     }
     .why-tag {
-      font-size: 11px;
+      font-size: 13px;
       letter-spacing: 0.28em;
       text-transform: uppercase;
       color: #aaa;
@@ -522,7 +522,7 @@
       margin-bottom: 18px;
     }
     .why-desc {
-      font-size: 15px;
+      font-size: 17px;
       line-height: 1.75;
       color: rgba(255,255,255,0.65);
       margin-bottom: 32px;
@@ -554,14 +554,14 @@
     }
     .why-card-title {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 700;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #fff;
       margin-bottom: 4px;
     }
-    .why-card-desc { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+    .why-card-desc { font-size: 15px; color: rgba(255,255,255,0.55); line-height: 1.5; }
     .why-readmore {
       display: inline-flex;
       align-items: center;
@@ -604,7 +604,7 @@
     }
     .why-stat-num span { color: var(--red); }
     .why-stat-label {
-      font-size: 10px;
+      font-size: 12px;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: #888;
@@ -621,7 +621,7 @@
       margin-bottom: 32px;
     }
     .section-label-center {
-      font-size: 10px;
+      font-size: 12px;
       letter-spacing: 0.24em;
       text-transform: uppercase;
       color: var(--red);
@@ -679,16 +679,18 @@
     }
     .brand-item:hover, .brand-item:active { background: var(--grey); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.07); z-index: 2; }
     .brand-item:hover::after, .brand-item:active::after { transform: scaleX(1); }
-    .brand-item svg {
+    .brand-item svg, .brand-item img {
       width: 50px;
       height: 36px;
       filter: grayscale(90%) opacity(0.65);
       transition: filter .25s;
+      object-fit: contain;
     }
-    .brand-item:hover svg, .brand-item:active svg { filter: grayscale(0%) opacity(1); }
+    .brand-item:hover svg, .brand-item:active svg,
+    .brand-item:hover img, .brand-item:active img { filter: grayscale(0%) opacity(1); }
     .brand-item-name {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
@@ -816,11 +818,11 @@
       font-weight: 700;
       text-transform: uppercase;
     }
-    .footer-brand-col p { font-size: 13px; line-height: 1.8; color: #888; max-width: 300px; }
-    .footer-cr { display: inline-block; margin-top: 14px; font-size: 11px; letter-spacing: 0.14em; padding: 5px 12px; background: rgba(255,255,255,0.06); color: #bbb; }
+    .footer-brand-col p { font-size: 15px; line-height: 1.8; color: #888; max-width: 300px; }
+    .footer-cr { display: inline-block; margin-top: 14px; font-size: 12px; letter-spacing: 0.14em; padding: 5px 12px; background: rgba(255,255,255,0.06); color: #bbb; }
     .footer-col h3 {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
       letter-spacing: 0.18em;
       text-transform: uppercase;
@@ -832,7 +834,7 @@
     }
     .footer-links { display: flex; flex-direction: column; gap: 8px; }
     .footer-links a {
-      font-size: 13px;
+      font-size: 15px;
       color: #888;
       transition: color .2s, padding-left .2s;
       display: flex;
@@ -846,7 +848,7 @@
       display: flex;
       gap: 12px;
       align-items: flex-start;
-      font-size: 13px;
+      font-size: 15px;
       color: #888;
     }
     .footer-contact-item svg { color: var(--red); flex-shrink: 0; margin-top: 2px; }
@@ -1104,7 +1106,7 @@
           <span class="slide-tag">Aldebaran Trading W.L.L — Qatar</span>
           <h2 class="slide-title">PREMIUM<br>AUTO SPARE<br>PARTS</h2>
           <ul class="slide-list">
-            <li>Genuine OEM-Grade Parts</li>
+            <li>Aftermarket OEM-Grade Parts</li>
             <li>German &amp; American Vehicles</li>
             <li>Fast Delivery Across Qatar</li>
           </ul>
@@ -1146,7 +1148,7 @@
           <span class="slide-tag">Quality Assured</span>
           <h2 class="slide-title">QUALITY<br>YOU CAN<br>TRUST</h2>
           <ul class="slide-list">
-            <li>100% Genuine &amp; OEM Parts</li>
+            <li>100% Aftermarket OEM-Grade Parts</li>
             <li>Trusted by Workshops &amp; Dealers</li>
             <li>Expert Parts Consultation</li>
           </ul>
@@ -1165,6 +1167,48 @@
             <li>WhatsApp Order Support</li>
           </ul>
           <a href="https://wa.me/97455632373" class="slide-btn" target="_blank">WhatsApp Us ›</a>
+        </div>
+      </div>
+
+      <!-- Slide 6 – Mercedes -->
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1542230387-bfc77d26903e?w=1400&q=80')">
+        <div class="slide-content">
+          <span class="slide-tag">German Luxury</span>
+          <h2 class="slide-title">MERCEDES<br>BENZ<br>PARTS</h2>
+          <ul class="slide-list">
+            <li>Genuine &amp; Aftermarket Options</li>
+            <li>All Models Covered</li>
+            <li>Expert Parts Consultation</li>
+          </ul>
+          <a href="#contact" class="slide-btn">Get a Quote ›</a>
+        </div>
+      </div>
+
+      <!-- Slide 7 – Land Rover -->
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1741905358583-1999b08d6e2e?w=1400&q=80')">
+        <div class="slide-content">
+          <span class="slide-tag">British SUV Specialist</span>
+          <h2 class="slide-title">LAND<br>ROVER<br>PARTS</h2>
+          <ul class="slide-list">
+            <li>Defender, Discovery &amp; Range Rover</li>
+            <li>OEM-Grade Components</li>
+            <li>Fast Qatar-Wide Delivery</li>
+          </ul>
+          <a href="#contact" class="slide-btn">Get a Quote ›</a>
+        </div>
+      </div>
+
+      <!-- Slide 8 – Volkswagen -->
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1541443131876-44b03de101c5?w=1400&q=80')">
+        <div class="slide-content">
+          <span class="slide-tag">German Engineering</span>
+          <h2 class="slide-title">VOLKSWAGEN<br>PARTS</h2>
+          <ul class="slide-list">
+            <li>Golf, Tiguan, Passat &amp; More</li>
+            <li>Aftermarket OEM-Grade Parts</li>
+            <li>Competitive Pricing</li>
+          </ul>
+          <a href="#contact" class="slide-btn">Get a Quote ›</a>
         </div>
       </div>
 
@@ -1189,7 +1233,7 @@
         <div class="feature-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <div class="feature-title">Genuine Parts</div>
+        <div class="feature-title">Aftermarket Parts</div>
         <div class="feature-sub">OEM-Grade Quality</div>
       </div>
       <div class="feature-box">
@@ -1210,8 +1254,8 @@
         <div class="feature-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <div class="feature-title">24/7 Support</div>
-        <div class="feature-sub">Always Available</div>
+        <div class="feature-title">Dedicated Support</div>
+        <div class="feature-sub">Here When You Need Us</div>
       </div>
     </div>
   </div>
@@ -1305,15 +1349,15 @@
           </div>
           <div class="why-stat-box">
             <div class="why-stat-num">100<span>%</span></div>
-            <div class="why-stat-label">Genuine Parts</div>
+            <div class="why-stat-label">Aftermarket OEM</div>
           </div>
           <div class="why-stat-box why-stat-red">
             <div class="why-stat-num" style="font-size:clamp(22px,5vw,40px)">DOHA</div>
             <div class="why-stat-label">Based in Qatar</div>
           </div>
           <div class="why-stat-box">
-            <div class="why-stat-num">24<span>/7</span></div>
-            <div class="why-stat-label">Availability</div>
+            <div class="why-stat-num" style="font-size:clamp(18px,4vw,32px)">SAME<span>–DAY</span></div>
+            <div class="why-stat-label">Parts Availability</div>
           </div>
         </div>
       </div>
@@ -1332,102 +1376,102 @@
         <div class="brands-track" id="brandsTrack">
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><rect x="28" y="4" width="24" height="48" fill="#c8a84b" rx="1"/><rect x="4" y="4" width="24" height="48" fill="#c8101a" rx="1"/><rect x="52" y="4" width="24" height="48" fill="#c8101a" rx="1"/><text x="40" y="33" text-anchor="middle" fill="#fff" font-size="7" font-family="Arial" font-weight="bold">PORSCHE</text><circle cx="40" cy="20" r="8" fill="none" stroke="#fff" stroke-width="1"/></svg>
+            <img src="brand_logos/porche.jpeg" alt="Porsche" />
             <div class="brand-item-name">Porsche</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><ellipse cx="40" cy="28" rx="30" ry="20" fill="none" stroke="#111" stroke-width="2"/><text x="40" y="33" text-anchor="middle" fill="#111" font-size="22" font-family="serif" font-weight="bold">B</text><path d="M22 38 Q40 44 58 38" fill="none" stroke="#111" stroke-width="1.5"/><path d="M22 18 Q40 12 58 18" fill="none" stroke="#111" stroke-width="1.5"/></svg>
+            <img src="brand_logos/bentley.png" alt="Bentley" />
             <div class="brand-item-name">Bentley</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><circle cx="40" cy="28" r="22" fill="none" stroke="#111" stroke-width="2"/><line x1="40" y1="6" x2="40" y2="28" stroke="#111" stroke-width="2.5"/><line x1="40" y1="28" x2="21" y2="44" stroke="#111" stroke-width="2.5"/><line x1="40" y1="28" x2="59" y2="44" stroke="#111" stroke-width="2.5"/><circle cx="40" cy="28" r="3.5" fill="#111"/></svg>
+            <img src="brand_logos/merchedes.jpeg" alt="Mercedes" />
             <div class="brand-item-name">Mercedes</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><polygon points="40,4 50,22 30,22" fill="#c8101a"/><polygon points="20,38 30,20 40,38" fill="#c8101a"/><polygon points="60,38 50,20 40,38" fill="#c8101a"/></svg>
+            <img src="brand_logos/mitsubishi.png" alt="Mitsubishi" />
             <div class="brand-item-name">Mitsubishi</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><rect x="6" y="14" width="68" height="28" rx="14" fill="#1a5c22"/><text x="40" y="32" text-anchor="middle" fill="#fff" font-size="8" font-family="Arial" font-weight="bold">LAND ROVER</text></svg>
+            <img src="brand_logos/landrover.jpeg" alt="Land Rover" />
             <div class="brand-item-name">Land Rover</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><ellipse cx="40" cy="28" rx="26" ry="16" fill="none" stroke="#c8101a" stroke-width="3"/><ellipse cx="40" cy="28" rx="11" ry="18" fill="none" stroke="#c8101a" stroke-width="3"/><ellipse cx="40" cy="14" rx="20" ry="6" fill="none" stroke="#c8101a" stroke-width="3"/></svg>
+            <img src="brand_logos/toyoto.png" alt="Toyota" />
             <div class="brand-item-name">Toyota</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><circle cx="40" cy="28" r="22" fill="#0d0e10"/><path d="M40 6 A22 22 0 0 1 62 28 L40 28 Z" fill="#fff"/><path d="M40 28 A22 22 0 0 0 62 28 L40 28 Z" fill="#4e9af0"/><path d="M40 28 A22 22 0 0 0 18 28 L40 28 Z" fill="#fff"/><path d="M40 28 A22 22 0 0 1 18 28 L40 28 Z" fill="#4e9af0"/><circle cx="40" cy="28" r="9" fill="#0d0e10"/><text x="40" y="32" text-anchor="middle" fill="#fff" font-size="7" font-family="Arial" font-weight="bold">BMW</text></svg>
+            <img src="brand_logos/bmw.jpeg" alt="BMW" />
             <div class="brand-item-name">BMW</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><circle cx="20" cy="28" r="9" fill="none" stroke="#111" stroke-width="2.5"/><circle cx="33" cy="28" r="9" fill="none" stroke="#111" stroke-width="2.5"/><circle cx="46" cy="28" r="9" fill="none" stroke="#111" stroke-width="2.5"/><circle cx="59" cy="28" r="9" fill="none" stroke="#111" stroke-width="2.5"/></svg>
+            <img src="brand_logos/audi.png" alt="Audi" />
             <div class="brand-item-name">Audi</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><path d="M14 22 Q24 12 40 16 Q56 12 66 22 Q72 30 56 38 Q48 44 40 42 Q32 44 24 38 Q8 30 14 22Z" fill="none" stroke="#111" stroke-width="2"/><text x="40" y="32" text-anchor="middle" fill="#111" font-size="7" font-family="Arial" font-style="italic" font-weight="bold">JAGUAR</text></svg>
+            <img src="brand_logos/jaguar.jpeg" alt="Jaguar" />
             <div class="brand-item-name">Jaguar</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><text x="40" y="36" text-anchor="middle" fill="#111" font-size="28" font-family="Arial" font-weight="900" letter-spacing="-3">KIA</text></svg>
+            <img src="brand_logos/kia.png" alt="KIA" />
             <div class="brand-item-name">KIA</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><ellipse cx="40" cy="28" rx="34" ry="20" fill="#1440a8"/><text x="40" y="35" text-anchor="middle" fill="#fff" font-size="20" font-family="serif" font-style="italic" font-weight="bold">Ford</text></svg>
+            <img src="brand_logos/ford.jpeg" alt="Ford" />
             <div class="brand-item-name">Ford</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><text x="40" y="40" text-anchor="middle" fill="#c8101a" font-size="38" font-family="Arial" font-weight="bold">H</text></svg>
+            <img src="brand_logos/honda.png" alt="Honda" />
             <div class="brand-item-name">Honda</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><circle cx="40" cy="28" r="22" fill="none" stroke="#1c4ec9" stroke-width="3"/><text x="40" y="35" text-anchor="middle" fill="#1c4ec9" font-size="20" font-family="Arial" font-weight="bold">VW</text></svg>
+            <img src="brand_logos/Volkswagen_logo.png" alt="Volkswagen" />
             <div class="brand-item-name">Volkswagen</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><circle cx="36" cy="28" r="20" fill="none" stroke="#111" stroke-width="2.5"/><line x1="50" y1="14" x2="62" y2="6" stroke="#111" stroke-width="2.5"/><polygon points="56,4 64,4 64,12" fill="#111"/><text x="36" y="32" text-anchor="middle" fill="#111" font-size="8" font-family="Arial" font-weight="bold">VOLVO</text></svg>
+            <img src="brand_logos/volvo.png" alt="Volvo" />
             <div class="brand-item-name">Volvo</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><text x="40" y="38" text-anchor="middle" fill="#c8101a" font-size="26" font-family="Arial" font-weight="900" letter-spacing="2">GMC</text></svg>
+            <img src="brand_logos/gmc.png" alt="GMC" />
             <div class="brand-item-name">GMC</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><path d="M8 22 H32 V28 H46 V34 H22 V28 H8 Z" fill="#e8c040"/><rect x="48" y="22" width="24" height="12" fill="#e8c040"/><rect x="52" y="25" width="16" height="6" fill="#fff"/></svg>
+            <img src="brand_logos/chevrolet.jpeg" alt="Chevrolet" />
             <div class="brand-item-name">Chevrolet</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><ellipse cx="40" cy="28" rx="30" ry="18" fill="none" stroke="#1c4ec9" stroke-width="2.5"/><text x="40" y="35" text-anchor="middle" fill="#1c4ec9" font-size="24" font-family="Arial" font-style="italic" font-weight="bold">H</text></svg>
+            <img src="brand_logos/hyundai.png" alt="Hyundai" />
             <div class="brand-item-name">Hyundai</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><ellipse cx="40" cy="28" rx="28" ry="18" fill="#1c4ec9"/><ellipse cx="30" cy="26" rx="6" ry="5" fill="#fff"/><ellipse cx="44" cy="22" rx="4" ry="3.5" fill="#fff"/><ellipse cx="53" cy="28" rx="4" ry="3.5" fill="#fff"/><ellipse cx="44" cy="33" rx="4" ry="3.5" fill="#fff"/><ellipse cx="32" cy="34" rx="3" ry="2.5" fill="#fff"/><ellipse cx="25" cy="22" rx="3" ry="2.5" fill="#fff"/></svg>
+            <img src="brand_logos/subaru.jpeg" alt="Subaru" />
             <div class="brand-item-name">Subaru</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><circle cx="40" cy="28" r="22" fill="none" stroke="#111" stroke-width="2"/><rect x="10" y="25" width="60" height="6" fill="#111"/><text x="40" y="31" text-anchor="middle" fill="#fff" font-size="6" font-family="Arial" font-weight="bold">NISSAN</text></svg>
+            <img src="brand_logos/nissan-logo.png" alt="Nissan" />
             <div class="brand-item-name">Nissan</div>
           </div>
 
           <div class="brand-item">
-            <svg viewBox="0 0 80 56"><ellipse cx="40" cy="28" rx="30" ry="20" fill="none" stroke="#111" stroke-width="2"/><path d="M40 12 Q22 24 32 36 Q40 30 48 36 Q58 24 40 12 Z" fill="#111"/></svg>
+            <img src="brand_logos/mazda.png" alt="Mazda" />
             <div class="brand-item-name">Mazda</div>
           </div>
 
