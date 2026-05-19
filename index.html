@@ -8,7 +8,7 @@
   <meta name="keywords" content="auto spare parts Qatar, car parts Doha, BMW parts Qatar, Mercedes parts Qatar, automotive spare parts" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&family=Bebas+Neue&family=Noto+Serif+Arabic:wght@700&display=swap" rel="stylesheet" />
   <style>
     /* ══════════════════════════════════════════════════
        VARIABLES & RESET
@@ -139,6 +139,40 @@
       color: var(--red);
       font-weight: 700;
       white-space: nowrap;
+    }
+    .nav-arabic {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      line-height: 1.15;
+      flex-shrink: 0;
+    }
+    .nav-arabic-name {
+      font-family: 'Noto Serif Arabic', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      direction: rtl;
+      white-space: nowrap;
+    }
+    .nav-arabic-sub {
+      font-family: 'Noto Serif Arabic', serif;
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--muted);
+      direction: rtl;
+      letter-spacing: 0.05em;
+    }
+    .ar-red { color: var(--red); }
+    .footer-arabic-name {
+      display: block;
+      font-family: 'Noto Serif Arabic', serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #bbb;
+      direction: rtl;
+      margin-top: 7px;
+      letter-spacing: 0;
     }
     .nav-links-wrap { display: flex; align-items: center; flex-shrink: 0; }
     .nav-links { display: none; gap: 4px; }
@@ -989,6 +1023,9 @@
       .nav-logo img { height: 52px; }
       .nav-logo-text strong { font-size: 22px; letter-spacing: 0.07em; }
       .nav-logo-text span { font-size: 10px; letter-spacing: 0.22em; }
+      .nav-arabic { display: flex; }
+      .nav-arabic-name { font-size: 19px; }
+      .nav-arabic-sub { font-size: 10px; }
       /* Slider */
       .slide { height: 520px; }
       .slide-content { padding: 0 80px; max-width: 680px; }
@@ -1074,6 +1111,10 @@
           <span>Autospare Parts — W.L.L</span>
         </div>
       </a>
+      <div class="nav-arabic" dir="rtl">
+        <span class="nav-arabic-name">الد يبارن <span class="ar-red">للتجارة</span></span>
+        <span class="nav-arabic-sub">ذ.م.م</span>
+      </div>
       <div class="nav-links-wrap">
         <ul class="nav-links" id="navLinks">
           <li><a href="#top" class="active">Home</a></li>
@@ -1523,6 +1564,7 @@
             <div class="footer-brand-name">
               ALDEBARAN TRADING
               <small>Autospare Parts — W.L.L</small>
+              <span class="footer-arabic-name" dir="rtl">الد يبارن <span class="ar-red">للتجارة</span> ذ.م.م</span>
             </div>
           </div>
         </div>
