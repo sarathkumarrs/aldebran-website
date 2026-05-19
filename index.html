@@ -53,7 +53,8 @@
       min-width: 0;
       display: flex;
       align-items: center;
-      gap: 14px;
+      column-gap: 14px;
+      row-gap: 0;
       padding: 0 14px;
       flex-wrap: wrap;
     }
@@ -131,7 +132,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .nav-logo-text span {
+    .nav-logo-text > span {
       display: block;
       font-size: 8px;
       letter-spacing: 0.18em;
@@ -141,7 +142,7 @@
       white-space: nowrap;
     }
     .nav-arabic {
-      display: none;
+      display: flex;
       flex-direction: column;
       align-items: flex-end;
       line-height: 1.15;
@@ -149,7 +150,7 @@
     }
     .nav-arabic-name {
       font-family: 'Noto Serif Arabic', serif;
-      font-size: 17px;
+      font-size: 14px;
       font-weight: 700;
       color: var(--text);
       direction: rtl;
@@ -157,7 +158,7 @@
     }
     .nav-arabic-sub {
       font-family: 'Noto Serif Arabic', serif;
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 700;
       color: var(--muted);
       direction: rtl;
@@ -983,7 +984,7 @@
       .nav-inner { height: 68px; padding: 0 20px; }
       .nav-logo img { height: 44px; }
       .nav-logo-text strong { font-size: 19px; }
-      .nav-logo-text span { font-size: 9px; letter-spacing: 0.2em; }
+      .nav-logo-text > span { font-size: 9px; letter-spacing: 0.2em; }
       /* Slider */
       .slide { height: 340px; }
       .slide-content { padding: 36px 36px; }
@@ -1016,16 +1017,15 @@
       .topbar-contact a { font-size: 13px; }
       .topbar-social { padding: 0 18px; gap: 4px; }
       /* Nav */
-      .nav-inner { padding: 0 40px; height: 76px; }
+      .nav-inner { padding: 0 40px; height: 90px; }
       .nav-toggle { display: none; }
       .nav-links { display: flex; }
       .mobile-nav { display: none !important; }
-      .nav-logo img { height: 52px; }
-      .nav-logo-text strong { font-size: 22px; letter-spacing: 0.07em; }
-      .nav-logo-text span { font-size: 10px; letter-spacing: 0.22em; }
-      .nav-arabic { display: flex; }
-      .nav-arabic-name { font-size: 19px; }
-      .nav-arabic-sub { font-size: 10px; }
+      .nav-logo img { height: 64px; }
+      .nav-logo-text strong { font-size: 30px; letter-spacing: 0.07em; }
+      .nav-logo-text > span { font-size: 12px; letter-spacing: 0.22em; }
+      .nav-arabic-name { font-size: 26px; }
+      .nav-arabic-sub { font-size: 12px; }
       /* Slider */
       .slide { height: 520px; }
       .slide-content { padding: 0 80px; max-width: 680px; }
@@ -1107,12 +1107,12 @@
       <a href="#top" class="nav-logo">
         <img src="invoice_logo.png" alt="Aldebaran Trading logo" />
         <div class="nav-logo-text">
-          <strong>ALDEBARAN TRADING</strong>
+          <strong><span style="color:var(--red)">ALDEBARAN</span> <span style="color:#111">TRADING</span></strong>
           <span>Autospare Parts — W.L.L</span>
         </div>
       </a>
       <div class="nav-arabic" dir="rtl">
-        <span class="nav-arabic-name">الد يبارن <span class="ar-red">للتجارة</span></span>
+        <span class="nav-arabic-name"><span class="ar-red">الد يبارن</span> للتجارة</span>
         <span class="nav-arabic-sub">ذ.م.م</span>
       </div>
       <div class="nav-links-wrap">
