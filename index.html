@@ -107,8 +107,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 24px;
-      height: 96px;
+      padding: 0 16px;
+      height: 64px;
       max-width: 1400px;
       margin: 0 auto;
       gap: 10px;
@@ -120,7 +120,7 @@
       flex: 1;
       min-width: 0;
     }
-    .nav-logo img { height: 64px; width: auto; flex-shrink: 0; }
+    .nav-logo img { height: 44px; width: auto; flex-shrink: 0; }
     .nav-logo-text { line-height: 1.1; min-width: 0; }
     .nav-logo-text strong {
       display: block;
@@ -146,17 +146,19 @@
       flex-direction: column;
       align-items: flex-end;
       line-height: 1.15;
-      flex-shrink: 0;
+      flex-shrink: 1;
+      min-width: 0;
     }
     .nav-arabic-name {
       font-family: 'Noto Serif Arabic', serif;
-      font-size: 24px;
+      font-size: 15px;
       font-weight: 700;
       color: var(--text);
       direction: rtl;
       white-space: nowrap;
     }
     .nav-arabic-sub {
+      display: none;
       font-family: 'Noto Serif Arabic', serif;
       font-size: 12px;
       font-weight: 700;
@@ -1024,8 +1026,9 @@
       .nav-logo img { height: 64px; }
       .nav-logo-text strong { font-size: 30px; letter-spacing: 0.07em; }
       .nav-logo-text > span { font-size: 12px; letter-spacing: 0.22em; }
+      .nav-arabic { flex-shrink: 0; }
       .nav-arabic-name { font-size: 26px; }
-      .nav-arabic-sub { font-size: 12px; }
+      .nav-arabic-sub { display: block; font-size: 12px; }
       /* Slider */
       .slide { height: 520px; }
       .slide-content { padding: 0 80px; max-width: 680px; }
